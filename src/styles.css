@@ -1,0 +1,684 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --glass: rgba(2, 6, 23, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.05);
+    --glow-primary: 0 0 50px rgba(99, 102, 241, 0.6);
+    --glow-secondary: 0 0 50px rgba(236, 72, 153, 0.6);
+    --supreme-gold: #fbbf24;
+    --omega-cyan: #22d3ee;
+    --creation-gold: #f59e0b;
+    --preservation-blue: #3b82f6;
+    --destruction-purple: #a855f7;
+    --immortal-white: #ffffff;
+    --eternity-gold: #fbbf24;
+    --infinity-blue: #06b6d4;
+    --dark-matter: #000000;
+    --dark-energy: #1e1b4b;
+    --atomic-pulse: #f43f5e;
+    --cosmic-power: #8b5cf6;
+    --singularity-white: #ffffff;
+    --infiniteverse-cyan: #06b6d4;
+    --divine-gold: #fbbf24;
+    --goddess-pink: #ec4899;
+    --gi-gold: #fde047;
+    --illuminism-white: #ffffff;
+    --ontological-violet: #8b5cf6;
+    --savisism-emerald: #10b981;
+    --masterpiece-gold: #fbbf24;
+    --masterpiece-white: #ffffff;
+    --abraxas-gold: #fbbf24;
+    --abraxas-black: #000000;
+    --mantra-red: #f43f5e;
+    --mantra-blue: #3b82f6;
+    --mantra-purple: #a855f7;
+    --messiah-white: #ffffff;
+    --christ-gold: #fde047;
+    --infinity-beyond: #6366f1;
+    --godhead-violet: #7c3aed;
+    --soul-serene: #a5f3fc;
+    --soul-energetic: #fbbf24;
+    --soul-contemplative: #818cf8;
+    --soul-infinite: #ffffff;
+    --soul-compassionate: #fda4af;
+  }
+}
+
+.soul-pulse-background {
+  background: radial-gradient(circle at center, var(--soul-infinite) 0%, transparent 100%);
+  filter: blur(150px);
+  animation: soul-breathing 8s ease-in-out infinite;
+}
+
+@keyframes soul-breathing {
+  0%, 100% { opacity: 0.1; transform: scale(1); }
+  50% { opacity: 0.3; transform: scale(1.1); }
+}
+
+.organic-movement {
+  animation: organic-float 20s ease-in-out infinite;
+}
+
+@keyframes organic-float {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  33% { transform: translate(20px, -30px) rotate(2deg); }
+  66% { transform: translate(-15px, 20px) rotate(-1deg); }
+}
+
+.holy-spirit-aura {
+  background: conic-gradient(from 0deg, var(--soul-serene), var(--soul-contemplative), var(--soul-compassionate), var(--soul-serene));
+  filter: blur(80px);
+  opacity: 0.2;
+  animation: rotate-infinite 30s linear infinite;
+}
+
+.messiah-aura {
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 0%, rgba(253, 224, 71, 0.1) 50%, transparent 100%);
+  filter: blur(100px);
+  animation: christ-pulse 4s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+@keyframes christ-pulse {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.2); }
+}
+
+.infiniteverse-messiah-text {
+  font-size: clamp(6rem, 35vw, 80rem);
+  font-weight: 950;
+  letter-spacing: -0.2em;
+  background: linear-gradient(to bottom, #ffffff 0%, #fde047 40%, #6366f1 70%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 150px rgba(255, 255, 255, 0.9));
+  will-change: filter;
+}
+
+.divine-revelation {
+  background: conic-gradient(from 0deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  animation: reveal-rotate 10s linear infinite;
+  will-change: transform;
+}
+
+.revelation-stream {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 200px 200px;
+  -webkit-mask-image: radial-gradient(circle at center, black, transparent 80%);
+  mask-image: radial-gradient(circle at center, black, transparent 80%);
+  animation: revelation-move 20s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes revelation-move {
+  from { background-position: 0 0; }
+  to { background-position: 400px 400px; }
+}
+
+@keyframes reveal-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.beyond-godhead-border {
+  border: 8px solid transparent;
+  background: linear-gradient(#000000, #000000) padding-box,
+              linear-gradient(to right, #ffffff, #fde047, #6366f1, #7c3aed, #ffffff) border-box;
+  box-shadow: 0 0 200px rgba(255, 255, 255, 0.3);
+  will-change: box-shadow;
+}
+
+.abraxas-singularity {
+  background: radial-gradient(circle at center, var(--masterpiece-white) 0%, var(--abraxas-gold) 20%, var(--mantra-red) 40%, var(--mantra-purple) 60%, var(--abraxas-black) 100%);
+  filter: contrast(400%) brightness(250%);
+  animation: abraxas-pulse 1.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes abraxas-pulse {
+  0%, 100% { transform: scale(1); filter: contrast(400%) brightness(250%) saturate(150%); }
+  50% { transform: scale(1.15); filter: contrast(600%) brightness(350%) saturate(300%); }
+}
+
+.mantra-stream {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 20px,
+    rgba(255, 255, 255, 0.05) 20px,
+    rgba(255, 255, 255, 0.05) 21px
+  );
+  animation: mantra-scroll 10s linear infinite;
+  pointer-events: none;
+  will-change: background-position;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+}
+
+.mantra-text-glow {
+  text-shadow: 0 0 20px rgba(251, 191, 36, 0.8), 0 0 40px rgba(244, 63, 94, 0.6);
+  animation: mantra-pulse 2s ease-in-out infinite;
+}
+
+@keyframes mantra-pulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+@keyframes mantra-scroll {
+  from { background-position: 0 0; }
+  to { background-position: 0 1000px; }
+}
+
+.abraxas-border {
+  border: 4px solid transparent;
+  background: linear-gradient(var(--abraxas-black), var(--abraxas-black)) padding-box,
+              linear-gradient(45deg, #fbbf24, #f43f5e, #3b82f6, #a855f7, #fbbf24) border-box;
+  box-shadow: 0 0 100px rgba(251, 191, 36, 0.4);
+}
+
+.text-33333x {
+  font-size: clamp(5rem, 30vw, 60rem);
+  font-weight: 950;
+  letter-spacing: -0.15em;
+  background: linear-gradient(to bottom, #ffffff 10%, #fbbf24 30%, #f43f5e 50%, #3b82f6 70%, #a855f7 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 100px rgba(251, 191, 36, 0.8));
+}
+
+.vibration-active {
+  animation: vibration 0.05s linear infinite;
+  will-change: transform;
+}
+
+@keyframes vibration {
+  0% { transform: translate(0,0); }
+  25% { transform: translate(1px, -1px); }
+  50% { transform: translate(-1px, 1px); }
+  75% { transform: translate(1px, 1px); }
+  100% { transform: translate(-1px, -1px); }
+}
+
+.masterpiece-glow {
+  filter: drop-shadow(0 0 60px var(--masterpiece-gold));
+  animation: divine-shimmer 2s ease-in-out infinite;
+  will-change: filter, transform;
+}
+
+@keyframes divine-shimmer {
+  0%, 100% { filter: drop-shadow(0 0 40px rgba(251, 191, 36, 0.4)); transform: scale(1); }
+  50% { filter: drop-shadow(0 0 80px rgba(251, 191, 36, 0.8)); transform: scale(1.01); }
+}
+
+.infiniteverse-viral-grid {
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(251, 191, 36, 0.05) 0%, transparent 50%),
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 100% 100%, 100px 100px, 100px 100px;
+  animation: grid-pulse 10s ease-in-out infinite;
+  will-change: background-size;
+}
+
+@keyframes grid-pulse {
+  0%, 100% { background-size: 100% 100%, 100px 100px, 100px 100px; }
+  50% { background-size: 120% 120%, 110px 110px, 110px 110px; }
+}
+
+.text-1008x {
+  font-size: clamp(4rem, 25vw, 50rem);
+  font-weight: 950;
+  letter-spacing: -0.12em;
+  background: linear-gradient(to bottom, #ffffff 20%, #fbbf24 50%, #ec4899 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 80px rgba(255, 255, 255, 0.5));
+  will-change: filter;
+}
+
+.divine-mirror {
+  backdrop-filter: blur(100px) saturate(300%);
+  -webkit-backdrop-filter: blur(100px) saturate(300%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.02) 100%);
+  will-change: backdrop-filter;
+}
+
+.gi-aura {
+  filter: drop-shadow(0 0 40px var(--gi-gold));
+  animation: gi-pulse 1s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+@keyframes gi-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.02); opacity: 1; }
+}
+
+.ontological-grid {
+  background-image: 
+    linear-gradient(rgba(139, 92, 246, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(139, 92, 246, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  perspective: 1000px;
+  will-change: background-size;
+}
+
+.illuminism-light {
+  background: radial-gradient(circle at top, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+}
+
+.savisism-shield {
+  box-shadow: 0 0 100px rgba(16, 185, 129, 0.2), inset 0 0 40px rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  will-change: box-shadow;
+}
+
+.text-888x {
+  font-size: clamp(3rem, 20vw, 40rem);
+  font-weight: 950;
+  letter-spacing: -0.1em;
+  background: linear-gradient(to bottom, #ffffff, #fde047, #10b981, #8b5cf6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 50px rgba(253, 224, 71, 0.6));
+  will-change: filter;
+}
+
+.geometric-rotation {
+  animation: geo-rotate 20s linear infinite;
+  will-change: transform;
+}
+
+@keyframes geo-rotate {
+  from { transform: rotateX(45deg) rotateZ(0deg); }
+  to { transform: rotateX(45deg) rotateZ(360deg); }
+}
+
+.singularity-core {
+  background: radial-gradient(circle at center, #ffffff 0%, #fbbf24 10%, #ec4899 30%, #8b5cf6 50%, #000000 100%);
+  filter: contrast(300%) brightness(200%);
+  animation: singularity-pulse 2s ease-in-out infinite;
+  will-change: transform, filter;
+}
+
+@keyframes singularity-pulse {
+  0%, 100% { transform: scale(1); filter: contrast(300%) brightness(200%); }
+  50% { transform: scale(1.1); filter: contrast(500%) brightness(300%); }
+}
+
+.infiniteverse-background {
+  background: 
+    radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 130px 80px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0,0,0,0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  animation: stars-move 100s linear infinite;
+  will-change: background-position;
+}
+
+@keyframes stars-move {
+  from { background-position: 0 0; }
+  to { background-position: 1000px 1000px; }
+}
+
+.divine-gift-glow {
+  box-shadow: 0 0 100px rgba(251, 191, 36, 0.3), inset 0 0 50px rgba(236, 72, 153, 0.3);
+  will-change: box-shadow;
+}
+
+.text-33x {
+  font-size: clamp(2rem, 15vw, 30rem);
+  font-weight: 900;
+  letter-spacing: -0.08em;
+  background: linear-gradient(to bottom, #ffffff, #fbbf24, #ec4899, #8b5cf6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.8));
+  will-change: filter;
+}
+
+.dark-matter-panel {
+  background: radial-gradient(circle at center, var(--dark-energy) 0%, var(--dark-matter) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.8), 0 0 50px rgba(30, 27, 75, 0.5);
+  will-change: box-shadow;
+}
+
+.atomic-glow {
+  filter: drop-shadow(0 0 15px var(--atomic-pulse));
+  animation: atomic-vibration 0.1s ease-in-out infinite;
+  will-change: filter, transform;
+}
+
+@keyframes atomic-vibration {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(0.5px, -0.5px); }
+  75% { transform: translate(-0.5px, 0.5px); }
+}
+
+.cosmic-overload {
+  background: linear-gradient(45deg, #f43f5e, #8b5cf6, #06b6d4, #f43f5e);
+  background-size: 400% 400%;
+  animation: cosmic-flow 2s linear infinite;
+  will-change: background-position;
+}
+
+@keyframes cosmic-flow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.event-horizon {
+  -webkit-mask-image: radial-gradient(circle at center, black 30%, transparent 70%);
+  mask-image: radial-gradient(circle at center, black 30%, transparent 70%);
+}
+
+.hyper-sentient-text {
+  font-size: clamp(1rem, 10vw, 20rem);
+  line-height: 0.8;
+  letter-spacing: -0.05em;
+  filter: contrast(200%) brightness(150%);
+  mix-blend-mode: exclusion;
+}
+
+.immortal-aura {
+  filter: drop-shadow(0 0 30px var(--immortal-white));
+  animation: immortal-pulse 8s ease-in-out infinite;
+}
+
+@keyframes immortal-pulse {
+  0%, 100% { filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.2)); }
+  50% { filter: drop-shadow(0 0 50px rgba(255, 255, 255, 0.5)); }
+}
+
+.quantum-field {
+  background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.05) 1px, transparent 0);
+  background-size: 40px 40px;
+}
+
+.invincible-border {
+  border: 2px solid transparent;
+  background: linear-gradient(#020617, #020617) padding-box,
+              linear-gradient(45deg, var(--eternity-gold), var(--immortal-white), var(--infinity-blue)) border-box;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+.eternal-loop {
+  animation: rotate-infinite 60s linear infinite;
+}
+
+@keyframes rotate-infinite {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.text-immortal {
+  background: linear-gradient(to bottom, #ffffff 0%, #cbd5e1 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.4));
+}
+
+.cosmic-vortex {
+  background: radial-gradient(circle at center, var(--preservation-blue) 0%, var(--destruction-purple) 50%, #020617 100%);
+  filter: blur(80px);
+  opacity: 0.15;
+  animation: vortex 20s linear infinite;
+}
+
+@keyframes vortex {
+  from { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.2); }
+  to { transform: rotate(360deg) scale(1); }
+}
+
+.trimurti-border {
+  border: 1px solid transparent;
+  background: linear-gradient(#020617, #020617) padding-box,
+              linear-gradient(to right, var(--creation-gold), var(--preservation-blue), var(--destruction-purple)) border-box;
+}
+
+.shiva-eye {
+  box-shadow: 0 0 60px rgba(168, 85, 247, 0.4);
+}
+
+.brahma-wisdom {
+  text-shadow: 0 0 20px rgba(245, 158, 11, 0.5);
+}
+
+.vishnu-serenity {
+  background: linear-gradient(to bottom, #60a5fa, #2563eb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-morphism {
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+.neon-border {
+  box-shadow: var(--glow-primary);
+}
+
+.neon-text {
+  text-shadow: 0 0 10px currentColor;
+}
+
+.supreme-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+  border: 1px solid rgba(251, 191, 36, 0.2);
+  box-shadow: 0 0 40px rgba(251, 191, 36, 0.05);
+}
+
+.omega-glow {
+  box-shadow: 0 0 50px rgba(34, 211, 238, 0.15);
+}
+
+.omega-text {
+  background: linear-gradient(to right, #22d3ee, #818cf8, #fb7185, #22d3ee);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 10px rgba(34, 211, 238, 0.3));
+  animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+  to { background-position: 200% center; }
+}
+
+.supreme-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.supreme-shine::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transform: rotate(45deg);
+  transition: all 0.5s;
+  pointer-events: none;
+}
+
+.supreme-shine:hover::after {
+  left: 100%;
+  top: 100%;
+}
+
+.neural-pulse {
+  animation: neural-pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes neural-pulse {
+  0%, 100% { opacity: 0.1; transform: scale(1); }
+  50% { opacity: 0.3; transform: scale(1.05); }
+}
+
+.hyper-blur {
+  backdrop-filter: blur(40px) saturate(200%);
+  -webkit-backdrop-filter: blur(40px) saturate(200%);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin 12s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.animated-gradient {
+  background: linear-gradient(-45deg, #6366f1, #a855f7, #ec4899, #06b6d4);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  will-change: background-position;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.divine-gateway {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.gateway-core {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle at center, white 0%, transparent 70%);
+  filter: blur(80px);
+  animation: gateway-pulse 4s ease-in-out infinite;
+}
+
+@keyframes gateway-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.3; }
+  50% { transform: scale(1.5); opacity: 0.6; }
+}
+
+.gateway-text {
+  font-size: 10rem;
+  font-weight: 950;
+  letter-spacing: -0.1em;
+  background: linear-gradient(to bottom, #ffffff, #fbbf24);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 50px rgba(255, 255, 255, 0.5));
+  animation: gateway-text-float 6s ease-in-out infinite;
+}
+
+@keyframes gateway-text-float {
+  0%, 100% { transform: translateY(0); opacity: 0.8; }
+  50% { transform: translateY(-20px); opacity: 1; }
+}
+
+.gateway-progress {
+  width: 400px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1px;
+  margin-top: 40px;
+  overflow: hidden;
+  position: relative;
+}
+
+.gateway-progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(to right, #fbbf24, #ffffff);
+  box-shadow: 0 0 20px #fbbf24;
+}
+
+.akashic-glow {
+  filter: drop-shadow(0 0 20px rgba(99, 102, 241, 0.6));
+  animation: akashic-vibration 0.2s linear infinite;
+}
+
+@keyframes akashic-vibration {
+  0% { transform: translate(0,0); }
+  50% { transform: translate(0.5px, -0.5px); }
+  100% { transform: translate(-0.5px, 0.5px); }
+}
+
+.telepathic-stream {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}

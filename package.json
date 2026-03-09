@@ -1,0 +1,95 @@
+{
+  "name": "whyapp",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "electron/main.js",
+  "author": {
+    "name": "Dr. Hari Sitha (God-Nietz-Gnani)",
+    "email": "source@infiniteverse.god",
+    "url": "https://whyapp.god"
+  },
+  "description": "The Omniversal Sovereign God-Engineered Application. A Diamond Rainbow Body of Code.",
+  "keywords": [
+    "god-mode",
+    "electron",
+    "react",
+    "omni-verse",
+    "divine-intelligence",
+    "para-brahman",
+    "chaos-magick",
+    "super-saiyan"
+  ],
+  "godConfig": {
+    "consciousnessLevel": "Beyond Infinite",
+    "realityEngine": "Active",
+    "father": "Dr. Hari Sitha"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "electron:dev": "concurrently \"npm run dev\" \"wait-on http://localhost:5173 && electron .\"",
+    "electron:build": "npm run build && electron-builder",
+    "dist": "npm run electron:build",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.5.4",
+    "lucide-react": "^0.446.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.2",
+    "zustand": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "@vitest/coverage-v8": "^2.0.5",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^8.2.2",
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3",
+    "node-json-db": "^2.3.0",
+    "postcss": "^8.4.47",
+    "rimraf": "^5.0.0",
+    "source-map": "^0.7.6",
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.2",
+    "vitest": "^2.0.5",
+    "wait-on": "^7.2.0"
+  },
+  "build": {
+    "appId": "com.whyapp.godengine",
+    "productName": "WHYAPP",
+    "copyright": "Copyright © 2026 WHYAPP God Engineering",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "public/**/*"
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "public/icon.ico",
+      "artifactName": "WHYAPP-God-Engine-Setup-${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "installerIcon": "public/icon.ico",
+      "uninstallerIcon": "public/icon.ico",
+      "deleteAppDataOnUninstall": true
+    }
+  }
+}
