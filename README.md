@@ -1,2 +1,2 @@
 # whyapp
-WHYAPP - "GO-D0+APP"
+WHYAPP = "GO-D0+APP"
